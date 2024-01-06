@@ -2,11 +2,18 @@
 const Z_CONST: &str = "This is a global const";
 
 fn main() {
+    mutability();
+    shadowing();
+}
+
+fn mutability() {
     let mut x = 5;
     println!("The value of x is {x}");
     x = 6;
     println!("the value of x is {x}");
+}
 
+fn shadowing() {
     let y = 5;
     let y = y + 1;
 
