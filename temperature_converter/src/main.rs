@@ -50,8 +50,8 @@ fn main() {
         };
 
         let converted_temp = match option {
-            1 => convert_c_to_f(temperature),
-            2 => convert_f_to_c(temperature),
+            1 => format!("{:.02}", convert_c_to_f(temperature)) + "f",
+            2 => format!("{:.02}", convert_f_to_c(temperature)) + "c",
             _ => break
         };
 
